@@ -1,0 +1,151 @@
+@startuml
+annotation java.lang.Override
+annotation javafx.fxml.FXML
+class java.io.IOException
+class java.net.URL
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.ResultSet
+class java.sql.Statement
+class java.util.ResourceBundle
+class javafx.application.Application
+class javafx.collections.FXCollections
+class javafx.collections.ObservableList
+class javafx.event.ActionEvent
+class javafx.fxml.FXMLLoader
+class javafx.scene.Parent
+class javafx.scene.Scene
+class javafx.scene.control.Alert
+class javafx.scene.control.Button
+class javafx.scene.control.ComboBox
+class javafx.scene.control.TableColumn
+class javafx.scene.control.TableView
+class javafx.scene.control.TextField
+class javafx.scene.control.cell.PropertyValueFactory
+class javafx.scene.input.MouseEvent
+class javafx.scene.layout.BorderPane
+class javafx.scene.layout.Pane
+class javafx.stage.Stage
+class projectfinal.Main
+class projectfinal.classes.connection.JDBConnection
+class projectfinal.classes.entertainments.Books
+class projectfinal.classes.entertainments.Entertainments
+class projectfinal.classes.entertainments.Movies
+class projectfinal.classes.entertainments.TvSeries
+class projectfinal.classes.loader.FxmlLoader
+class projectfinal.controller.BooksDashboardController
+class projectfinal.controller.DashboardController
+class projectfinal.controller.LoginController
+class projectfinal.controller.MoviesDashboardController
+class projectfinal.controller.TvSeriesDashboardController
+interface javafx.fxml.Initializable
+interface projectfinal.interfaces.CheckTextField
+interface projectfinal.interfaces.ItemQuery
+projectfinal.Main ..> java.lang.Override
+projectfinal.Main --|> javafx.application.Application
+projectfinal.Main ..> javafx.fxml.FXMLLoader
+projectfinal.Main ..> javafx.scene.Parent
+projectfinal.Main ..> javafx.scene.Scene
+projectfinal.Main ..> javafx.stage.Stage
+projectfinal.classes.connection.JDBConnection ..> java.sql.Connection
+projectfinal.classes.connection.JDBConnection ..> java.sql.DriverManager
+projectfinal.classes.connection.JDBConnection ..> java.sql.Statement
+projectfinal.classes.entertainments.Books --|> projectfinal.classes.entertainments.Entertainments
+projectfinal.classes.entertainments.Movies --|> projectfinal.classes.entertainments.Entertainments
+projectfinal.classes.entertainments.TvSeries --|> projectfinal.classes.entertainments.Entertainments
+projectfinal.classes.loader.FxmlLoader ..> java.io.IOException
+projectfinal.classes.loader.FxmlLoader ..> javafx.fxml.FXMLLoader
+projectfinal.classes.loader.FxmlLoader ..> javafx.scene.Parent
+projectfinal.classes.loader.FxmlLoader ..> javafx.scene.Scene
+projectfinal.classes.loader.FxmlLoader ..> javafx.scene.control.Alert
+projectfinal.classes.loader.FxmlLoader ..> javafx.scene.layout.Pane
+projectfinal.classes.loader.FxmlLoader ..> javafx.stage.Stage
+projectfinal.controller.BooksDashboardController ..> java.lang.Override
+projectfinal.controller.BooksDashboardController ..> javafx.fxml.FXML
+projectfinal.controller.BooksDashboardController ..> java.net.URL
+projectfinal.controller.BooksDashboardController ..> java.sql.Connection
+projectfinal.controller.BooksDashboardController ..> java.sql.ResultSet
+projectfinal.controller.BooksDashboardController ..> java.sql.Statement
+projectfinal.controller.BooksDashboardController ..> java.util.ResourceBundle
+projectfinal.controller.BooksDashboardController ..> javafx.collections.FXCollections
+projectfinal.controller.BooksDashboardController ..> javafx.collections.ObservableList
+projectfinal.controller.BooksDashboardController ..> javafx.event.ActionEvent
+projectfinal.controller.BooksDashboardController ..> javafx.scene.control.ComboBox
+projectfinal.controller.BooksDashboardController ..> javafx.scene.control.TableColumn
+projectfinal.controller.BooksDashboardController ..> javafx.scene.control.TableView
+projectfinal.controller.BooksDashboardController ..> javafx.scene.control.TextField
+projectfinal.controller.BooksDashboardController ..> javafx.scene.control.cell.PropertyValueFactory
+projectfinal.controller.BooksDashboardController ..> javafx.scene.input.MouseEvent
+projectfinal.controller.BooksDashboardController ..> projectfinal.classes.connection.JDBConnection
+projectfinal.controller.BooksDashboardController ..> projectfinal.classes.entertainments.Books
+projectfinal.controller.BooksDashboardController ..> projectfinal.classes.loader.FxmlLoader
+projectfinal.controller.BooksDashboardController --|> javafx.fxml.Initializable
+projectfinal.controller.BooksDashboardController --|> projectfinal.interfaces.CheckTextField
+projectfinal.controller.BooksDashboardController --|> projectfinal.interfaces.ItemQuery
+projectfinal.controller.DashboardController ..> javafx.fxml.FXML
+projectfinal.controller.DashboardController ..> java.io.IOException
+projectfinal.controller.DashboardController ..> javafx.event.ActionEvent
+projectfinal.controller.DashboardController ..> javafx.scene.control.Button
+projectfinal.controller.DashboardController ..> javafx.scene.layout.BorderPane
+projectfinal.controller.DashboardController ..> javafx.scene.layout.Pane
+projectfinal.controller.DashboardController ..> javafx.stage.Stage
+projectfinal.controller.DashboardController ..> projectfinal.classes.loader.FxmlLoader
+projectfinal.controller.LoginController ..> java.lang.Override
+projectfinal.controller.LoginController ..> javafx.fxml.FXML
+projectfinal.controller.LoginController ..> java.io.IOException
+projectfinal.controller.LoginController ..> java.sql.Connection
+projectfinal.controller.LoginController ..> java.sql.ResultSet
+projectfinal.controller.LoginController ..> java.sql.Statement
+projectfinal.controller.LoginController ..> javafx.event.ActionEvent
+projectfinal.controller.LoginController ..> javafx.scene.control.Button
+projectfinal.controller.LoginController ..> javafx.scene.control.TextField
+projectfinal.controller.LoginController ..> javafx.stage.Stage
+projectfinal.controller.LoginController ..> projectfinal.classes.connection.JDBConnection
+projectfinal.controller.LoginController ..> projectfinal.classes.loader.FxmlLoader
+projectfinal.controller.LoginController --|> projectfinal.interfaces.CheckTextField
+projectfinal.controller.MoviesDashboardController ..> java.lang.Override
+projectfinal.controller.MoviesDashboardController ..> javafx.fxml.FXML
+projectfinal.controller.MoviesDashboardController ..> java.net.URL
+projectfinal.controller.MoviesDashboardController ..> java.sql.Connection
+projectfinal.controller.MoviesDashboardController ..> java.sql.ResultSet
+projectfinal.controller.MoviesDashboardController ..> java.sql.Statement
+projectfinal.controller.MoviesDashboardController ..> java.util.ResourceBundle
+projectfinal.controller.MoviesDashboardController ..> javafx.collections.FXCollections
+projectfinal.controller.MoviesDashboardController ..> javafx.collections.ObservableList
+projectfinal.controller.MoviesDashboardController ..> javafx.event.ActionEvent
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.control.ComboBox
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.control.TableColumn
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.control.TableView
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.control.TextField
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.control.cell.PropertyValueFactory
+projectfinal.controller.MoviesDashboardController ..> javafx.scene.input.MouseEvent
+projectfinal.controller.MoviesDashboardController ..> projectfinal.classes.connection.JDBConnection
+projectfinal.controller.MoviesDashboardController ..> projectfinal.classes.entertainments.Movies
+projectfinal.controller.MoviesDashboardController ..> projectfinal.classes.loader.FxmlLoader
+projectfinal.controller.MoviesDashboardController --|> javafx.fxml.Initializable
+projectfinal.controller.MoviesDashboardController --|> projectfinal.interfaces.CheckTextField
+projectfinal.controller.MoviesDashboardController --|> projectfinal.interfaces.ItemQuery
+projectfinal.controller.TvSeriesDashboardController ..> java.lang.Override
+projectfinal.controller.TvSeriesDashboardController ..> javafx.fxml.FXML
+projectfinal.controller.TvSeriesDashboardController ..> java.net.URL
+projectfinal.controller.TvSeriesDashboardController ..> java.sql.Connection
+projectfinal.controller.TvSeriesDashboardController ..> java.sql.ResultSet
+projectfinal.controller.TvSeriesDashboardController ..> java.sql.Statement
+projectfinal.controller.TvSeriesDashboardController ..> java.util.ResourceBundle
+projectfinal.controller.TvSeriesDashboardController ..> javafx.collections.FXCollections
+projectfinal.controller.TvSeriesDashboardController ..> javafx.collections.ObservableList
+projectfinal.controller.TvSeriesDashboardController ..> javafx.event.ActionEvent
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.control.ComboBox
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.control.TableColumn
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.control.TableView
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.control.TextField
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.control.cell.PropertyValueFactory
+projectfinal.controller.TvSeriesDashboardController ..> javafx.scene.input.MouseEvent
+projectfinal.controller.TvSeriesDashboardController ..> projectfinal.classes.connection.JDBConnection
+projectfinal.controller.TvSeriesDashboardController ..> projectfinal.classes.entertainments.TvSeries
+projectfinal.controller.TvSeriesDashboardController ..> projectfinal.classes.loader.FxmlLoader
+projectfinal.controller.TvSeriesDashboardController --|> javafx.fxml.Initializable
+projectfinal.controller.TvSeriesDashboardController --|> projectfinal.interfaces.CheckTextField
+projectfinal.controller.TvSeriesDashboardController --|> projectfinal.interfaces.ItemQuery
+projectfinal.interfaces.ItemQuery ..> javafx.collections.ObservableList
+@enduml
