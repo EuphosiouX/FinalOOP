@@ -39,14 +39,6 @@ CREATE TABLE `books` (
   `status` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `books`
---
-
-INSERT INTO `books` (`id`, `title`, `author`, `genre`, `year`, `pages`, `status`) VALUES
-(2, 'Harry Potter and the Philosopher,s Stone', 'J.K. Rowling', 'Novel', 1998, 467, 'READ'),
-(3, 'Harry Potter and the Deathly Hallow', 'J.K. Rowling', 'Novel', 1998, 467, 'READ');
-
 -- --------------------------------------------------------
 
 --
@@ -62,14 +54,6 @@ CREATE TABLE `movies` (
   `duration` varchar(45) NOT NULL,
   `status` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `movies`
---
-
-INSERT INTO `movies` (`id`, `title`, `director`, `genre`, `year`, `duration`, `status`) VALUES
-(2, 'Shrek 2', 'Andrew Adamson', 'Fantasy', 2004, '1h45m', 'WATCHING'),
-(3, 'Shrek 3', 'Chris Miller', 'Fantasy', 2007, '1h33m', 'WATCHED');
 
 -- --------------------------------------------------------
 
@@ -87,14 +71,6 @@ CREATE TABLE `tvseries` (
   `status` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `tvseries`
---
-
-INSERT INTO `tvseries` (`id`, `title`, `genre`, `year`, `seasons`, `episodes`, `status`) VALUES
-(2, 'Attack on Titan', 'Anime', 2007, 4, 23, 'WATCHED'),
-(3, 'Attack on Titan 2', 'Anime', 2007, 4, 23, 'NOT WATCHED');
-
 -- --------------------------------------------------------
 
 --
@@ -103,24 +79,9 @@ INSERT INTO `tvseries` (`id`, `title`, `genre`, `year`, `seasons`, `episodes`, `
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `firstname` varchar(45) NOT NULL,
-  `lastname` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`) VALUES
-(1, 'Michael', 'Christopher', 'michael123', '123456'),
-(2, 'Admin', 'istrator', 'admin', 'admin'),
-(3, 'Jude', 'Martinez', 'edujzenitram', 'edujz');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `books`
@@ -154,22 +115,22 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `tvseries`
 --
 ALTER TABLE `tvseries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
